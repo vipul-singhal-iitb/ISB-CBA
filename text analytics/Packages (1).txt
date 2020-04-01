@@ -1,0 +1,1 @@
+install.packages(c('bit64','caret','dplyr','e1071','gbm','ggplot2','httr','plyr','qdap','qdapDictionaries','RColorBrewer','RCurl','rjson','RTextTools','RWeka','scales','SnowballC','stringr','tm','topicmodels','twitteR','XML'), repos = 'http://cran.rstudio.com/')
