@@ -1,0 +1,14 @@
+function codebook = buildCodeBook(data,coding)
+    if(strcmp(coding.clustering,'kmeans')==1)
+        %kmeans coding
+        codebook = kmeansCodeBook(data,coding);
+    end
+end
+
+function centroid = kmeansCodeBook(data,coding)
+    cNum = str2num(coding.codeNum);
+    options = statset('MaxIter',10,'Display','iter');
+%     [~,centroid] = kmeans(data',cNum,'emptyaction','singleton','onlinephase','off','options',options);
+    [~,centroid,~] = simpleKmeans(data
+    centroid = centroid';
+end
